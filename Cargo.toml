@@ -1,0 +1,18 @@
+[package]
+name = "train_display"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+chrono = "0.4.41"
+chrono-tz = "0.10.4"
+clap = { version = "4.5.41", features = ["derive"] }
+gtfs-realtime = "0.2.0"
+gtfs-structures = "0.44.0"
+prost = "0.14.1"
+reqwest = "0.12.22"
+tokio = { version = "1", features = ["full"] }
+
+[build-dependencies]
+prost-build = "0.14.1"
